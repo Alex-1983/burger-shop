@@ -1,0 +1,64 @@
+.visually-hidden {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+
+  white-space: nowrap;
+
+  border: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 100%;
+  max-width: $container;
+
+  @include tablet {
+    padding: 0 20px;
+  }
+
+  @include mobile {
+    padding: 0 15px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  overflow: hidden;
+
+  box-sizing: border-box;
+  margin: 0;
+  max-width: 100%;
+
+  font-family: inherit;
+  user-select: none;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: none;
+  text-overflow: ellipsis;
+  border: 0;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

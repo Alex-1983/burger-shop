@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+@include('html/head.html', { "title":"Главная страница" })
+
+<body class="page__body">
+
+  <div class="page__inner">
+
+    @include('html/header.html')
+
+    <main class="page__content">
+      контент
+    </main>
+
+    @include('html/footer.html')
+
+  </div>
+
+  <!-- <a class="to-top to-top--visible" id="to-top" href="#">
+    <svg width="25" height="25">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-to-top"></use>
+    </svg>
+  </a> -->
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
